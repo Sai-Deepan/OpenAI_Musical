@@ -7,10 +7,11 @@ Draw a line in the browser, clarify what it should sound like, and build your in
 ## Start here
 
 1. Click **Fork** on [Sai-Deepan/OpenAI_Musical](https://github.com/Sai-Deepan/OpenAI_Musical) to create your own copy.
-2. Use **Node.js 24 LTS** (a compatible Node version >=22.12 also works).
+2. Clone your fork, then open it in your editor or Codex. Replace YOUR_USERNAME below.
+3. Use **Node.js 24 LTS** (a compatible Node version >=22.12 also works).
 
 ```sh
-git clone https://github.com/Sai-Deepan/OpenAI_Musical.git
+git clone https://github.com/YOUR_USERNAME/OpenAI_Musical.git
 cd OpenAI_Musical
 # If you use nvm: nvm install && nvm use
 npm ci

@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#14241d" />
+    <meta name="description" content="Draw a line. Build an instrument. A starter for the trackpad music workshop." />
+    <title>Trackpad Orchestra · Workshop starter</title>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="masthead">
+        <a class="wordmark" href="./" aria-label="Trackpad Orchestra home"><span class="mark" aria-hidden="true">≈</span> TRACKPAD ORCHESTRA</a>
+        <span class="badge">WORKSHOP / STARTER</span>
+      </header>
+
+      <section class="intro" aria-labelledby="title">
+        <p class="eyebrow">A LITTLE GESTURE. A NEW SOUND.</p>
+        <h1 id="title">Your trackpad.<br />Your <em>instrument.</em></h1>
+        <p class="lede">Draw something. Make it musical. This is your starting point—what it becomes is up to you.</p>
+      </section>
+
+      <section class="studio" aria-labelledby="studio-title">
+        <div class="studio-topline">
+          <h2 id="studio-title"><span class="live-dot" aria-hidden="true"></span> Drawing studio</h2>
+          <span id="stroke-count">0 strokes</span>
+        </div>
+        <div class="drawing-area">
+          <div class="pitch-label pitch-high" aria-hidden="true">HIGH PITCH ↑</div>
+          <canvas id="drawing-canvas" aria-label="Drawing area. Press and drag your trackpad, mouse, or finger to draw. Audio playback is a workshop task." aria-describedby="canvas-help"></canvas>
+          <div id="canvas-placeholder" class="canvas-placeholder" aria-hidden="true">
+            <svg viewBox="0 0 160 60" fill="none"><path d="M4 44C25 44 25 9 46 9S66 51 88 51 111 15 132 15 145 28 156 28" stroke="currentColor" stroke-width="3" stroke-linecap="round" /></svg>
+            <strong>Start with a line.</strong>
+            <span>Press and drag to draw on the canvas</span>
+          </div>
+          <div class="pitch-label pitch-low" aria-hidden="true">LOW PITCH ↓</div>
+        </div>
+        <div class="transport" role="group" aria-label="Instrument controls">
+          <button id="play" class="button button-primary" type="button"><span aria-hidden="true">▶</span> Play drawing</button>
+          <button id="stop" class="button button-secondary" type="button"><span aria-hidden="true">■</span> Stop</button>
+          <button id="clear" class="button button-quiet" type="button">Clear canvas</button>
+          <span class="transport-divider" aria-hidden="true"></span>
+          <button id="test-sound" class="button button-test" type="button">♪ Test sound</button>
+        </div>
+        <div class="status-line"><span class="status-dot" aria-hidden="true"></span><p id="status" role="status" aria-live="polite">Ready to draw. Try Test sound to check your audio.</p></div>
+      </section>
+
+      <p id="canvas-help" class="canvas-help">Trackpad tip: click and hold while moving one finger. Mouse, touch, and pen work too. Headphones recommended.</p>
+
+      <section class="missions" aria-labelledby="missions-title">
+        <div class="section-heading"><h2 id="missions-title">From a line to a melody.</h2><span>YOUR BUILD BRIEF</span></div>
+        <div class="mission-grid">
+          <article class="mission"><span class="mission-number">01 / PITCH</span><h3>Give height a voice.</h3><p>Higher on the canvas, higher in pitch. Draw at two heights and hear the difference.</p></article>
+          <article class="mission"><span class="mission-number">02 / DURATION</span><h3>Let the line linger.</h3><p>Longer lines should play for longer. Compare a small gesture with a sweeping curve.</p></article>
+          <article class="mission"><span class="mission-number">03 / CONTROL</span><h3>Make it playable.</h3><p>Play the current drawing. Stop sound immediately. Clear both the drawing and playback.</p></article>
+        </div>
+      </section>
+      <aside class="starter-note"><strong>This is a starter, not a finished instrument.</strong><p>Drawing and Test sound work. Connecting your drawing to music is the workshop challenge. Begin with <code>src/instrument.js</code> and record your evidence in <code>docs/BUILD_RECORD.md</code>.</p></aside>
+      <footer><span>BUILT BY YOU, WITH A LITTLE HELP.</span><span>Draw → Clarify → Build → Test → Remix</span></footer>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
